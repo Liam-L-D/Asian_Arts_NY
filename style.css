@@ -50,7 +50,7 @@ header {
   font-family: 'Noto Serif SC', serif;
   font-size: 1.6rem;
   font-weight: 500;
-  color: #bd4831;
+  color: var(--color-light);
   letter-spacing: 2px;
   margin-top: -10px;
   margin-bottom: 20px;
