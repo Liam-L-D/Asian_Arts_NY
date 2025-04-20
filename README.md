@@ -30,3 +30,6 @@ Technologies used include:
 ---
 
 ## 📁 Project Structure
+index.html
+style.css
+/imgs 
