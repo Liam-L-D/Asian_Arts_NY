@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic metadata and mobile support -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#f7d184">
+
+  <title>About Us - Asian Arts New York</title>
+
+  <!-- Icons for different devices and platforms -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/icons/favicon-64x64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#f7d184">
+
+  <!-- Preconnect for font performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Bootstrap and custom styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap Icons (needed for envelope and LinkedIn icons) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* Custom image hover effect */
+    .img-hover-zoom {
+      max-width: 280px;
+      height: auto;
+      border: 4px solid #f7d184;
+      transition: transform 0.3s ease;
+    }
+    .img-hover-zoom:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===================== Navigation Bar ===================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #000;">
+    <div class="container">
+      <!-- Brand logo -->
+      <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+        <img src="logos/logo_red.webp" alt="Asian Arts NY Logo" width="60" height="60" class="me-2">
+      </a>
+
+      <!-- Hamburger button for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-end text-lg-start">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="arts/index.html" role="button" data-bs-toggle="dropdown">Arts</a>
+            <ul class="dropdown-menu">
+              <!-- Submenu: Performing Arts -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="arts/performing/index.html">Performing Art</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="arts/performing/dragon-dance.html">Dragon Dance</a></li>
+                  <li><a class="dropdown-item" href="arts/performing/drum.html">Drum</a></li>
+                  <li><a class="dropdown-item" href="arts/performing/folk-dance.html">Folk Dance</a></li>
+                  <li><a class="dropdown-item" href="arts/performing/folk-music.html">Folk Music</a></li>
+                  <li><a class="dropdown-item" href="arts/performing/chinese-opera.html">Chinese Opera</a></li>
+                  <li><a class="dropdown-item" href="arts/performing/tai-chi.html">Tai Chi</a></li>
+                  <li><a class="dropdown-item" href="arts/performing/tea-ceremony.html">Tea Ceremony</a></li>
+                </ul>
+              </li>
+              <!-- Submenu: Visual Arts -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="arts/visual/index.html">Visual Art</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="arts/visual/fine-art.html">Fine Art</a></li>
+                  <li><a class="dropdown-item" href="arts/visual/decorative-art.html">Decorative Art</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="donation.html">Donation</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- ===================== About Section ===================== -->
+<section class="py-5 position-relative" style="background-color: #f7d084; color: black;">
+  <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+    z-index: 1;"></div>
+
+  <div class="container position-relative z-2">
+    <h2 class="mb-4 text-start">About Us</h2>
+    <p class="lead text-start">
+      Asian Arts New York (AANY) is a nonprofit organization dedicated to promoting Asian heritage through the power of artistic expression. Founded by Wei Qin, AANY provides a platform for Asian artists across New York State, fostering cross-cultural exchange and enriching the diverse fabric of our communities through performance, education, and collaboration.
+    </p>
+
+    <!-- Centered Bylaws Button -->
+  <div class="text-center mt-4">
+  <a href="images/aany-bylaws-2025.pdf" class="btn btn-aany-red" target="_blank">
+    <i class="fas fa-file-pdf me-2"></i> View AANY Bylaws
+  </a>
+  </div>
+  </div>
+</section>
+
+<!-- ===================== Founder Section ===================== -->
+<section class="py-5 text-white position-relative" style="
+  background-image: url('images/background/founder-section.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 80vh;">
+
+  <!-- black overlay -->
+  <div style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;"></div>
+
+  <div class="container position-relative z-2">
+  <h2 class="mb-5 text-start" style="color: #f7d084;">Board of Directors</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 mb-4">
+        <img src="images/wei.webp" alt="Wei Qin - President & Founder" class="img-fluid rounded shadow mb-4 img-hover-zoom">
+        <h4 class="text-white text-center">Wei Qin - President & Founder</h4>
+        <p class="text-light small text-start">
+        Wei Qin’s service to promote heritage Art and culture has made her an important figure in the Capital Region. Wei Qin was one of the awardees of the Distinction of Women of District 110 in 2024. She received a proclamation from the New York State Comptroller for her contribution during the 2025 Lunar New Year. She was awarded an Individual Artist grant from the Art Center of Capital Region in May 2025.
+        </p>
+        <p class="text-light small text-start">
+        During her previous three-year term as the President of Chinese Community Center (CCC), Wei took several initiatives to reach out to the community both within and outside of CCC, significantly increasing the organization's popularity and reputation. Under Wei’s leadership, CCC received the “Global Citizenship” award issued by the International Center of the Capital Region in 2023. In 2024 she led the CCC team and secured $134,000 state funding for the CCC.
+        </p>
+        <p class="text-light small text-start">
+        As a culture ambassador, Wei Qin believes culture diversity can lead to overall prosperity in the Capital Region. She founded Asian Arts New York, Inc., setting up the vision that Art transcends Boundaries and Connects People. She aimed to offer a platform for Asian Artists across New York State, to continue to serve the diverse landscape of the NY cultural mosaic.
+        </p>
+        <div class="mt-3 text-center">
+          <a href="mailto:ed@asianartsny.org" class="btn btn-outline-light btn-sm me-2">
+            <i class="bi bi-envelope"></i> Email
+          </a>
+          <a href="#" class="btn btn-outline-light btn-sm">
+            <i class="bi bi-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Leadership Section ===================== -->
+<section class="program-section text-center py-5">
+  <div class="container">
+    <h2 class="mb-5 text-start" style="color: #f7d084;">Board Member</h2>
+    <div class="row justify-content-center">
+      <!-- Secretary: Ann Parillo -->
+      <div class="col-md-4 mb-4">
+        <img src="images/ann.jpg" alt="Ann Parillo - Secretary" class="img-fluid rounded shadow mb-3 img-hover-zoom">
+        <h5 class="text-white text-center">Ann Parillo</h5>
+        <p class="text-light text-center">Secretary</p>
+        <p class="text-light small text-start">
+        Ann Parillo’s interests for China began when Gregg Millett discovered his father’s color slides of China from 1943-1944, which were later recognized as the oldest known color photographs of the country. After several exhibitions, the original slides were presented to the National Museum of History in Beijing, where Ann and her family were honored guests. Her love for China and its culture continues today.
+        A retired NYS and Kansas pharmacist, Ann owned *The Apothecary Shop* and worked as a Production Pharmacist and consultant for Sterling Drug Co. She also taught at the Albany College of Pharmacy and served as the Supervisor of Pharmacy Practice for the NYS Board of Pharmacy. In addition, Ann was involved in the NYS Board of Physical Therapy and the Institutional Review Board of the Capital District Psychiatric Center.
+        After retiring, Ann became involved in local television, serving as the President of Schenectady Access Cable Council and Chair of the City of Schenectady Cable Council for over six years. Currently, she is the Board Secretary of the ElectriCity Arts and Entertainment District and volunteers with local community theaters, the Kids Arts Festival, and Jazz on Jay.
+        Ann has received numerous awards, including BPW Woman of the Year and YWCA Woman of Achievement. She is a proud recipient of the Schenectady Patroon title and has hosted and produced *Capital Region Today* for 27 years. Ann also serves as the Volunteer Executive Director of Singles Outreach Services Inc., an organization for single adults. She is excited to join the Board of Asian Arts NY and contribute her talents to the team.
+        </p>
+      </div>
+
+      <!-- Treasurer: Peter G. Balint -->
+      <div class="col-md-4 mb-4">
+        <img src="images/peter.jpg" alt="Peter G. Balint - Treasurer" class="img-fluid rounded shadow mb-3 img-hover-zoom">
+        <h5 class="text-white text-center">Peter G. Balint</h5>
+        <p class="text-light text-center">Treasurer</p>
+        <p class="text-light small text-start">
+        Peter Balint is a retired executive with a background in both domestic and international markets. He served as the first Managing Director of NYNEX International in Europe, based in Geneva, where he led market development and gained market leadership in telecommunications. Having immigrated to the U.S. at age 13, Peter’s personal experience with cultural challenges has been a key reason for his involvement with the AANY board. He authored a memoir, *The Shoe in the Danube*, about his immigrant experience as a Holocaust survivor. Peter served in the U.S. Army for three years, achieving the rank of Captain.
+        A practitioner of Tai Chi for over 25 years, Peter is married to Sandra Balint, a Tai Chi Master and longtime supporter of the local Chinese community. He holds a degree in French from Siena College and has completed graduate-level courses from institutions such as Yale, Princeton, and Wharton. Peter has also participated in international business seminars and lectured at universities such as the University of Idaho and INSEAD. He is a former commander of the Lake George Power Squadron and former treasurer of the Fan Association of North America (FANA).
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-section">
+  <div class="container">
+    <!-- Row 1: Logo and Quick Links -->
+    <div class="row">
+      <!-- Left: Logo and Contact Info -->
+      <div class="col-md-6 mb-4 text-md-start text-center">
+        <img src="logos/logo_white.png" alt="Asian Arts NY Logo" width="60" height="60" class="mb-2">
+        <p class="mb-1 fw-bold">ASIAN ARTS NEW YORK, INC.</p>
+        <p class="mb-1">
+          Email:
+          <a href="mailto:info@asianartsny.org" class="text-white text-decoration-underline">
+            info@asianartsny.org
+          </a>
+        </p>
+      </div>
+
+      <!-- Right: Quick Links -->
+      <div class="col-md-6 mb-4 text-md-end text-center">
+        <h6 class="text-uppercase fw-bold">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+          <li><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+          <li><a href="events.html" class="text-white text-decoration-none">Events</a></li>
+          <li><a href="donation.html" class="text-white text-decoration-none">Donation</a></li>
+        </ul>
+      </div>
+    </div>
+
+   <!-- Row 2: Collaboration Links -->
+<div class="row">
+  <div class="col-12 text-center mt-4 collab-links">
+    <h6 class="text-uppercase fw-bold">Collaboration</h6>
+    <ul class="list-unstyled">
+      <li><a href="https://www.binghamton.edu/centers/ctac/aboutus.html" target="_blank">CTAC – Binghamton University</a></li>
+      <li><a href="https://www.nainichen.org" target="_blank">Nai-Ni Chen Dance Company</a></li>
+      <li><a href="https://www.chinesemusicensemble.org" target="_blank">Chinese Music Ensemble</a></li>
+      <li><a href="https://www.festivalofnationsalbany.org" target="_blank">Festival of Nations Albany</a></li>
+      <li><a href="https://www.518sian.com" target="_blank">518sian</a></li>
+      <li><a href="https://iccralbany.org" target="_blank">ICCR Albany</a></li>
+    </ul>
+  </div>
+</div>
+
+    <!-- Row 3: Social Media Icons -->
+    <div class="row">
+      <div class="col-12 social-icons text-center mt-4">
+        <a href="https://www.facebook.com/profile.php?id=61575126127831&sk=grid" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/asianartsnewyork/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@asianartsny" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/channel/UCIntgI7IRByDrE3xztGGWmg" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Row 4: Copyright -->
+    <div class="row">
+      <div class="col-12 text-center border-top border-secondary pt-3 pb-2 mt-4">
+        <p class="small mb-1 text-light">&copy; 2025 Asian Arts New York, Inc. All rights reserved.</p>
+        <p class="small mb-1 text-light">
+          Designed by
+          <a href="https://duanstudio.com" target="_blank" class="footer-brand-link">
+            <strong>Duan Studio (Liam Duan)</strong>
+          </a>
+        </p>
+        <p class="small mb-0 text-light">Photographers: Yingjiang Wen, Alex Zhang</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap and custom scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

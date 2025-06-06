@@ -1,211 +1,642 @@
-/* =============================== */
-/* RESET AND ROOT SYSTEM */
-/* =============================== */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-:root {
-  --color-bg: #000000;
-  --color-accent: rgb(181, 55, 33);
-  --color-light: #e0e0e0;
-  --color-white: #ffffff;
-  --color-text: rgb(244, 244, 244);
-  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
+/* ============================================================
+   Base Styles
+============================================================ */
 body {
-  font-family: Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  background-color: #bd4831;
-  color: var(--color-text);
-  padding: 20px;
-}
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-/* =============================== */
-/* HEADER */
-/* =============================== */
-header {
-  background: #1a1a1a;
-  color: var(--color-light);
-  padding: 30px 20px;
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: var(--shadow-lg);
-}
-.site-name {
-  font-family: 'Noto Serif SC', serif;
-  text-shadow: 2px 2px 6px rgba(255, 215, 0, 0.4);
-  font-size: 4rem;
-  color: var(--color-light);
-  letter-spacing: 2px;
-  margin-top: -10px;
-}
-.site-subtitle {
-  font-family: 'Noto Serif SC', serif;
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: var(--color-light);
-  letter-spacing: 2px;
-  margin-top: -10px;
-  margin-bottom: 20px;
-}
-/* =============================== */
-/* NAVIGATION */
-/* =============================== */
-.bg-custom {
-  background-color: #121212;
-  border-bottom: 1px solid #333;
-}
-.navbar-nav .nav-link {
-  color: var(--color-light) !important;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-.navbar-nav .nav-link:hover {
-  color: var(--color-white) !important;
-  text-decoration: underline;
-  transition: 0.2s ease-in-out;
-}
-.navbar-toggler {
-  border-color: #555;
-}
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23e0e0e0' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-.navbar .container-fluid {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-/* =============================== */
-/* MISSION + VISION */
-/* =============================== */
-.mission-vision-section h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--color-light);
-  margin-bottom: 10px;
-}
-.mission-vision-section p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-}
-/* =============================== */
-/* VISUAL ART CARDS */
-/* =============================== */
-.card {
-  border: none;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
-}
-.card-img-top {
-  object-fit: cover;
-  height: 200px;
-}
-.card-title {
-  font-size: clamp(0.9rem, 2vw, 1.1rem);
-  font-weight: bold;
-  text-align: center;
-  color: var(--color-light);
-}
-.card-body {
   background-color: #000;
+  color: #fff;
+  font-family: "Helvetica Neue", sans-serif;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-/* =============================== */
-/* VIDEO SECTION */
-/* =============================== */
-.video-section {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 12px;
-  margin-bottom: 30px;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-.video-section:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: var(--shadow-lg);
+
+/* ============================================================
+   Navigation Bar
+============================================================ */
+.navbar-brand {
+  font-size: 1.3rem;
+  color: #f7d084 !important;
 }
-.video-container {
+
+.navbar-nav .nav-link {
+  color: #f7d084 !important;
+  padding: 0.5rem 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #000 !important;
+  background-color: #f7d084;
+  border-radius: 4px;
+}
+
+.navbar-toggler {
+  padding: 0.3rem 0.75rem;
+  font-size: 1.25rem;
+}
+
+.dropdown-menu {
+  background-color: #f7d084;
+  border: none;
+}
+
+.dropdown-item {
+  color: black;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f4c55c;
+}
+
+.dropdown-submenu {
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 800px;
-  width: 100%;
 }
-.video-container iframe {
+
+.dropdown-submenu > .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+  background-color: #f7d084;
+  border: none;
+}
+
+.dropdown-submenu > .dropdown-menu.show {
+  display: block;
+}
+
+/* ============================================================
+   Hero Section
+============================================================ */
+header.hero {
+  padding: 4rem 0;
+  animation: fadeIn 1.5s ease-in both;
+}
+
+.hero h1 {
+  font-size: 4rem;
+}
+
+.hero h2.slogan {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.hero h5 {
+  font-size: 1.2rem;
+}
+
+/* ============================================================
+   Mission Section
+============================================================ */
+section.mission {
+  background-color: #f7d084;
+  color: black;
+}
+
+.mission-title {
+  color: #f7d084;
+}
+
+/* ============================================================
+   Program Section
+============================================================ */
+section.program-section {
+  background-color: #4699b0;
+  color: #fff;
+  animation: fadeIn 1.5s ease-in both;
+}
+
+.program-section h2 {
+  color: #000;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.program-section .event-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.program-section .event-item {
+  width: calc(33.333% - 2rem);
+  text-align: center;
+  animation: fadeIn 1.5s ease-in both;
+}
+
+.program-section .event-item img {
+  aspect-ratio: 7 / 5;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-section .event-item img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.program-section .event-item h5 {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.program-section .event-item p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* =================== Custom Button for AANY Bylaws =================== */
+.btn-aany-red {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-aany-red:hover {
+  background-color: #a0181f;
+  color: white;
+  border-color: #a0181f;
+}
+
+/* =================== AANY About Page Leadership Card Tweak ================== */
+.program-section h4,
+.program-section h5 {
+  text-align: center;
+  color: #f7d084;
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+}
+
+.program-section p.text-light.small {
+  text-align: left;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Adapt biography text alignment for different column sizes */
+.program-section .col-lg-8 p,
+.program-section .col-md-4 p {
+  text-align: left;
+}
+
+.program-section .img-hover-zoom {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.program-section .btn {
+  margin-top: 1rem;
+}
+
+/* ============================================================
+   Events Section
+============================================================ */
+.events-section {
+  position: relative;
+  background: url("images/background/events-background.webp") center center / cover no-repeat fixed;
+  padding: 4rem 1rem;
+  color: #fff;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+}
+
+.events-section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.events-section .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.events-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.events-section h2 {
+  color: #f7d084;
+  font-weight: bold;
+}
+
+.event-block {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(247, 209, 132, 0.2);
 }
-/* =============================== */
-/* BACKGROUND COLORS */
-/* =============================== */
-.bg-color-1, .bg-color-2 {
-  background-color: var(--color-bg);
+
+.event-date {
+  color: #f7d084;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
 }
-/* =============================== */
-/* FOOTER STYLES */
-/* =============================== */
-footer {
-  background: var(--color-accent);
-  color: var(--color-white);
+
+.event-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.event-desc {
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.event-block a {
+  color: #f7d084;
+  text-decoration: underline;
+}
+
+.event-block a:hover {
+  color: #fff;
+}
+
+/* ============================================================
+   Donation Section
+============================================================ */
+.btn-zeffy-filled {
+  background-color: #a0181f;
+  color: #fff;
+  border: 2px solid #a0181f;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-zeffy-filled:hover {
+  background-color: #7f1016;
+  color: #fff;
+}
+
+/* ===== Folk Music images Section Custom Hover with shadow ===== */
+
+.image-frame-custom {
+  border: 10px solid #f7d184;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); /* Subtle shadow for light background */
+}
+
+.image-frame-custom:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.35); /* Slightly stronger on hover */
+}
+
+/* Inner image hover effect */
+.image-frame-custom img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.image-frame-custom:hover img {
+  transform: scale(1.04);
+  filter: brightness(1.05); /* Light up image on hover */
+}
+
+/* ==== Folk Music Video Section Custom Hover ==== */
+.video-frame-custom {
+  background-color: #000;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.video-frame-custom:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(247, 208, 132, 0.8), 0 0 12px rgba(247, 208, 132, 0.6);
+}
+
+/* ==== Arts Video Link Hover Effect on Thumb ==== */
+.video-link img {
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
+}
+
+.video-link:hover img {
+  /* Golden glow and zoom */
+  box-shadow: 0 0 25px rgba(247, 208, 132, 0.8), 0 0 10px rgba(247, 208, 132, 0.6)!important;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+/* ============================================================
+   Footer Section
+============================================================ */
+.footer-section {
+  background-color: #000;
+  color: #fff;
+  padding: 4rem 1rem 2rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  animation: fadeIn 1.5s ease-in both;
+}
+
+.footer-section h6 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer-section a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-section a:hover {
+  color: #f7d084;
+  text-decoration: underline;
+}
+
+.footer-section img {
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  margin-bottom: 0.3rem;
+}
+
+.footer-section .copyright {
+  color: #ccc;
+  font-size: 0.85rem;
+  margin-top: 2rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
   text-align: center;
-  padding: 20px;
-  margin-top: 20px;
 }
-footer ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
+
+.footer-section .credit {
+  font-size: 0.85rem;
+  color: #ccc;
 }
-footer ul li {
-  margin: 0 15px;
+
+.footer-section .credit a {
+  color: #ccc;
+  text-decoration: underline;
 }
-.social-icon {
+
+.footer-section .credit a:hover {
+  color: #f7d084;
+}
+
+.footer-brand-link {
+  color: #f7d084;
   text-decoration: none;
-  border-bottom: none;
-  line-height: 0;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-brand-link:hover {
+  color: #fff;
+  text-shadow: 0 0 5px rgba(247, 209, 132, 0.5);
+  text-decoration: underline;
+}
+
+/* Collaboration-specific styling */
+.footer-section .collab-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-section .collab-links a:hover {
+  color: #f7d084;
+  text-decoration: underline;
+  text-shadow: 0 0 6px rgba(247, 209, 132, 0.5);
+}
+
+/* ===================== Social Media Icons ===================== */
+.footer-section .social-icons a {
+  color: #ccc;
+  font-size: 1.3rem;
+  margin: 0 0.6rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer-section .social-icons a i {
   vertical-align: middle;
+  line-height: 1;
+  text-decoration: none !important;
 }
-.social-icon i {
-  text-decoration: none;
-  border-bottom: none;
+
+.footer-section .social-icons a:hover {
+  transform: scale(1.2);
+  color: #f7d084;
 }
-/* =============================== */
-/* RESPONSIVE TYPOGRAPHY */
-/* =============================== */
-@media (max-width: 480px) {
-  html { font-size: 14px; }
-  header { padding: 10px; }
-  footer { font-size: 12px; }
+
+/* ============================================================
+   Animation
+============================================================ */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-@media (min-width: 481px) and (max-width: 768px) {
-  html { font-size: 15px; }
-  header { padding: 15px; }
-  footer { font-size: 14px; }
+
+/* ============================================================
+   Responsive Styles
+============================================================ */
+@media (max-width: 768px) {
+  .event-item,
+  .event-block {
+    width: 100% !important;
+    display: block;
+  }
+
+  .event-gallery {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .event-block {
+    padding: 1rem;
+  }
+
+  .event-block .event-date,
+  .event-block .event-title {
+    font-size: 1rem;
+  }
+
+  .event-block .event-desc {
+    font-size: 0.95rem;
+  }
+
+  .program-section .row.justify-content-center {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program-section .col-lg-8,
+  .program-section .col-md-4 {
+    max-width: 100%;
+  }
+
+  .img-hover-zoom {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .program-section h4,
+  .program-section h5 {
+    font-size: 1.25rem;
+  }
+
+  .program-section p {
+    font-size: 0.9rem;
+  }
+
+  .dropdown-submenu > .dropdown-menu {
+    position: static;
+    display: none;
+    margin-left: 1rem;
+    background-color: #f7d084;
+    border: none;
+    box-shadow: none;
+  }
+
+  .dropdown-submenu > .dropdown-menu.show {
+    display: block;
+  }
+
+  .dropdown-submenu {
+    padding-left: 1rem;
+  }
+
+  section,
+  footer {
+    padding: 2rem 0;
+  }
+
+  .footer-section .text-md-start,
+  .footer-section .text-md-end {
+    text-align: center !important;
+  }
+
+  .footer-section ul {
+    padding-left: 0;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-section img {
+    margin-bottom: 1rem;
+  }
+
+  .footer-section .copyright {
+    padding-top: 1.5rem;
+    border-top: 1px solid #444;
+    font-size: 0.75rem;
+    line-height: 1.6;
+  }
+
+  .footer-section .credit a {
+    font-size: 0.75rem;
+  }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
-  html { font-size: 16px; }
-  header { padding: 20px; }
-  footer { font-size: 16px; }
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero h2.slogan {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .hero h5 {
+    font-size: 0.9rem;
+  }
+
+  .program-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-section p,
+  .footer-section a,
+  .footer-section .credit {
+    font-size: 0.7rem;
+    line-height: 1.6;
+  }
+
+  .footer-section .copyright {
+    font-size: 0.7rem;
+    padding-top: 1rem;
+  }
+
+  .event-block .event-date,
+  .event-block .event-title {
+    font-size: 0.95rem;
+  }
+
+  .event-block .event-desc {
+    font-size: 0.85rem;
+  }
 }
-@media (min-width: 1025px) {
-  html { font-size: 17px; }
-  header { padding: 30px; }
-  footer { font-size: 18px; }
+
+/* ============================================================
+   Custom Image Zoom Class
+============================================================ */
+.img-hover-zoom {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border: 4px solid #f7d084;
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+}
+
+.img-hover-zoom:hover {
+  transform: scale(1.05);
 }

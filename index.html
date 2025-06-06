@@ -1,253 +1,304 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Asian Arts New York Inc (AANY) - Promoting Asian culture and art through events and education in Albany, NY.">
-  <title>ASIAN ARTS NEW YORK INC (AANY)</title>
-  <!-- Favicon and Icons -->
-  <link rel="icon" href="favicon.png" type="image/png">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="favicon.png">
-  <!-- Preconnect for Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#f7d184">
 
-<!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+  <title>Asian Arts New York Inc</title>
+  <meta name="description" content="Asian Arts New York (AANY) promotes Asian culture through performances, education, and community events across New York State.">
+  <meta name="keywords" content="Asian arts, cultural events, New York nonprofit, Chinese dance, Asian performances, AANY">
 
-  <!-- CSS Libraries -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Asian Arts New York Inc">
+  <meta property="og:description" content="Promoting Asian culture through art, education, and community engagement in New York.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://asianartsny.org">
+  <meta property="og:image" content="https://asianartsny.org/logos/og-image.jpg"> 
+
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Asian Arts New York Inc">
+  <meta name="twitter:description" content="Promoting Asian culture through art, education, and community engagement in New York.">
+  <meta name="twitter:image" content="https://asianartsny.org/images/og-image.jpg">
+
+  <!-- Canonical Link -->
+  <link rel="canonical" href="https://asianartsny.org/about.html">
+
+  <!-- Apple touch icon for iOS Home Screen -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+
+  <!-- Favicon for browser tabs and address bar -->
+  <link rel="icon" type="image/png" sizes="64x64" href="/icons/favicon-64x64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Safari pinned tab icon (macOS Safari) -->
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#f7d184">
+
+  <!-- Preconnect to improve font loading performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Bootstrap CSS framework -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS styles -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- Bootstrap JS -->
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-  <!-- ======= Header ======= -->
-<header>
-  <h1 class="text-center py-1 site-name">ASIAN ARTS NEW YORK INC</h1>
-  <p class="text-center site-subtitle">(AANY)</p>
-</header>
 
-  <!-- ======= Navigation Bar ======= -->
-  <nav class="navbar navbar-expand-sm bg-custom navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="imgs/Logo.png" alt="Asian Arts NY Logo" width="60" height="60" class="d-inline-block align-text-top">
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #000;">
+  <div class="container">
+    <!-- Brand Logo -->
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+      <img src="logos/logo_red.webp" alt="Asian Arts NY Logo" width="60" height="60" class="me-2">
+    </a>
+
+    <!-- Toggle button for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto text-end text-lg-start">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+        <!-- Dropdown: Arts -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="arts/index.html" role="button" data-bs-toggle="dropdown">Arts</a>
+          <ul class="dropdown-menu">
+
+            <!-- Performing Art submenu -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="arts/performing/index.html">Performing Art</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="arts/performing/dragon-dance.html">Dragon Dance</a></li>
+                <li><a class="dropdown-item" href="arts/performing/drum.html">Drum</a></li>
+                <li><a class="dropdown-item" href="arts/performing/folk-dance.html">Folk Dance</a></li>
+                <li><a class="dropdown-item" href="arts/performing/folk-music.html">Folk Music</a></li>
+                <li><a class="dropdown-item" href="arts/performing/chinese-opera.html">Chinese Opera</a></li>
+                <li><a class="dropdown-item" href="arts/performing/tai-chi.html">Tai Chi</a></li>
+                <li><a class="dropdown-item" href="arts/performing/tea-ceremony.html">Tea Ceremony</a></li>
+              </ul>
+            </li>
+
+            <!-- Visual Art submenu -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="arts/visual/index.html">Visual Art</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="arts/visual/fine-art.html">Fine Art</a></li>
+                <li><a class="dropdown-item" href="arts/visual/decorative-art.html">Decorative Art</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="donation.html">Donation</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- ===================== Hero Section ===================== -->
+  <header class="hero text-white text-center d-flex align-items-center justify-content-center" style="
+    background: url('images/events/event4.webp') no-repeat center center;
+    background-size: cover;
+    min-height: 90vh;
+    position: relative;
+  ">
+    <!-- Overlay for readability -->
+    <div style="
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    "></div>
+
+    <!-- Hero text -->
+    <div class="container position-relative z-2">
+      <h1 class="display-4 fw-bold">ASIAN ARTS NEW YORK</h1>
+      <h5 class="mb-4">AANY</h5>
+      <h2 class="slogan">“Where Art Transcends <br> Boundaries and Connects People”</h2>
+    </div>
+  </header>
+
+  <!-- ===================== Mission Section ===================== -->
+  <section class="mission text-center py-5" style="background-color: #f7d084; color: black;">
+    <div class="container">
+      <h2 class="mb-4">Our Mission</h2>
+      <p class="lead">
+        To preserve and elevate Asian heritage through the power of artistic expression.
+        By seamlessly blending tradition with modernity, we create transformative experiences
+        that foster cultural awareness, inspire unity, and empower communities.
+        Through performance and education, we strive to bridge generations, ignite conversations,
+        and celebrate the richness of Asian arts in a global society.
+      </p>
+    </div>
+  </section>
+
+<!-- ===================== Program Section ===================== -->
+<section id="program-section" class="program-section text-center py-5">
+  <div class="container">
+    <!-- Section title -->
+    <h2 class="mb-5" style="color: #fff;">Program</h2> 
+
+    <!-- Flex container for all event cards -->
+    <div class="event-gallery">
+
+      <a href="arts/performing/chinese-opera.html" class="text-decoration-none text-dark d-block event-item">
+        <img src="images/events/event1.webp" class="img-fluid mb-2" loading="lazy" alt="Peking Opera Performance">
+        <h5>Peking Opera Performance</h5>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link text-uppercase fw-bold" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase fw-bold" href="javascript:void(0)">Visual Arts</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase fw-bold" href="javascript:void(0)">About</a></li>
+
+      <a href="arts/performing/tai-chi.html" class="text-decoration-none text-dark d-block event-item">
+        <img src="images/events/event2.webp" class="img-fluid mb-2" loading="lazy" alt="Tai Chi Fan Dance">
+        <h5>Tai Chi Fan Dance</h5>
+      </a>
+
+      <a href="arts/performing/tea-ceremony.html" class="text-decoration-none text-dark d-block event-item">
+        <img src="images/events/event3.webp" class="img-fluid mb-2" loading="lazy" alt="Chinese Tea Ceremony">
+        <h5>Chinese Tea Ceremony</h5>
+      </a>
+
+      <a href="arts/performing/dragon-dance.html" class="text-decoration-none text-dark d-block event-item">
+        <img src="images/events/event4.webp" class="img-fluid mb-2" loading="lazy" alt="Dynamic Dragon Dance">
+        <h5>Dynamic Dragon Dance</h5>
+      </a>
+
+      <a href="arts/visual/fine-art.html" class="text-decoration-none text-dark d-block event-item">
+        <img src="images/events/event5.webp" class="img-fluid mb-2" loading="lazy" alt="Calligraphy">
+        <h5>Calligraphy</h5>
+      </a>
+
+      <a href="arts/performing/folk-dance.html" class="text-decoration-none text-dark d-block event-item">
+        <img src="images/events/event6.webp" class="img-fluid mb-2" loading="lazy" alt="Korean Traditional Dance">
+        <h5>Korean Traditional Dance</h5>
+      </a>
+
+      <a href="arts/visual/fine-art.html" class="text-decoration-none text-dark d-block event-item">
+        <img src="images/events/event7.webp" class="img-fluid mb-2" loading="lazy" alt="Fine Art">
+        <h5>Fine Art</h5>
+      </a>
+
+      <a href="arts/performing/folk-music.html" class="text-decoration-none text-dark d-block event-item">
+        <img src="images/events/event8.webp" class="img-fluid mb-2" loading="lazy" alt="Eastern Music Ensemble">
+        <h5>Eastern Music Ensemble</h5>
+      </a>
+
+      <a href="arts/performing/folk-music.html" class="text-decoration-none text-dark d-block event-item">
+        <img src="images/events/event9.webp" class="img-fluid mb-2" loading="lazy" alt="Asian Pottery">
+        <h5>Asian Pottery</h5>
+      </a>
+
+      <a href="arts/visual/fine-art.html" class="text-decoration-none text-dark d-block event-item">
+        <img src="images/events/event10.webp" class="img-fluid mb-2" loading="lazy" alt="Dunhuang Mural Appreciation">
+        <h5>Dunhuang Mural Appreciation</h5>
+      </a>
+
+      <a href="arts/performing/folk-dance.html" class="text-decoration-none text-dark d-block event-item">
+        <img src="images/events/event11.webp" class="img-fluid mb-2" loading="lazy" alt="Chinese Folk Dance">
+        <h5>Chinese Folk Dance</h5>
+      </a>
+
+      <a href="arts/performing/folk-music.html" class="text-decoration-none text-dark d-block event-item">
+        <img src="images/events/event12.webp" class="img-fluid mb-2" loading="lazy" alt="Indian Sitar & Tabla Performance">
+        <h5>Indian Sitar & Tabla Performance</h5>
+      </a>
+
+    </div> <!-- end .event-gallery -->
+  </div> <!-- end .container -->
+</section>
+
+
+<!-- ===================== Footer Section ===================== -->
+<footer class="footer-section">
+  <div class="container">
+
+    <!-- Row 1: Logo and Quick Links -->
+    <div class="row">
+      <!-- Left: Logo and Contact Info -->
+      <div class="col-md-6 mb-4 text-md-start text-center">
+        <img src="logos/logo_white.png" alt="Asian Arts NY Logo" width="60" height="60" class="mb-2">
+        <p class="mb-1 fw-bold">ASIAN ARTS NEW YORK, INC.</p>
+        <p class="mb-1">
+          Email:
+          <a href="mailto:info@asianartsny.org" class="text-white text-decoration-underline">
+            info@asianartsny.org
+          </a>
+        </p>
+      </div>
+
+      <!-- Right: Footer Navigation -->
+      <div class="col-md-6 mb-4 text-md-end text-center">
+        <h6 class="text-uppercase fw-bold">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+          <li><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+          <li><a href="events.html" class="text-white text-decoration-none">Events</a></li>
+          <li><a href="donation.html" class="text-white text-decoration-none">Donation</a></li>
         </ul>
       </div>
     </div>
-  </nav>
 
-  <!-- ======= Main Content Starts Here ======= -->
-  <main class="container my-4">
-
-    <!-- ======= Row 1: Mission, Visual Art Album, Opera Videos ======= -->
-    <div class="row">
-      <!-- Column 1: Mission and Vision Section -->
-      <!-- Optimized with concise text and structured list -->
-      <div class="col-lg-4 col-md-12 mb-4">
-  <section class="bg-color-1 p-4 rounded shadow h-100 mission-vision-section">
-    <h2>Our Mission</h2>
-    <p>To preserve and elevate Asian heritage through artistic expression. By blending tradition and modernity, we create experiences that foster cultural awareness and empower communities.</p>
-    
-    <h2>Our Vision</h2>
-    <p>Art transcends boundaries, connecting people beyond culture and distance.</p>
-    
-    <h2>What We Do</h2>
-    <p>We promote performing and visual arts in Upstate New York through events and exhibitions featuring Chinese and Asian artists.</p>
-    
-    <ul class="list-unstyled ps-3">
-      <li><a href="#" class="text-white text-decoration-none">School Assembly</a></li>
-      <li><a href="#" class="text-white text-decoration-none">Multicultural Event</a></li>
-      <li><a href="#" class="text-white text-decoration-none">Senior Center Event</a></li>
-      <li><a href="#" class="text-white text-decoration-none">Presentation</a></li>
-      <li><a href="#" class="text-white text-decoration-none">Workshop</a></li>
+<!-- Row 2: Collaboration Links -->
+<div class="row">
+  <div class="col-12 text-center mt-4 collab-links">
+    <h6 class="text-uppercase fw-bold">Collaboration</h6>
+    <ul class="list-unstyled">
+      <li><a href="https://www.binghamton.edu/centers/ctac/aboutus.html" target="_blank">CTAC – Binghamton University</a></li>
+      <li><a href="https://www.nainichen.org" target="_blank">Nai-Ni Chen Dance Company</a></li>
+      <li><a href="https://www.chinesemusicensemble.org" target="_blank">Chinese Music Ensemble</a></li>
+      <li><a href="https://www.festivalofnationsalbany.org" target="_blank">Festival of Nations Albany</a></li>
+      <li><a href="https://www.518sian.com" target="_blank">518sian</a></li>
+      <li><a href="https://iccralbany.org" target="_blank">ICCR Albany</a></li>
     </ul>
-
-    <h2 class="mt-4">Upcoming Events</h2>
-    <ul class="list-unstyled ps-3">
-      <li><strong>May 23rd, 7pm</strong><br>
-        Presentation & Tea Ceremony Demo: <em>“Chinese Tea Ceremony—The Art of Life”</em><br>
-        Partnered with Singles Outreach<br>
-        <a href="http://www.singlesoutreach.org" target="_blank" class="text-white text-decoration-underline">Registration required</a>
-      </li>
-      <li class="mt-3"><strong>May 30th, 5–9pm</strong><br>
-        <em>TroyAsia Night Market</em><br>
-        AANY partners with 518sians.org to present performances alongside an Asian food festival.<br>
-        Free entry
-      </li>
-      <li class="mt-3"><strong>August 23rd</strong><br>
-        <em>New York State Asian Village:</em> AAPI presents <em>“The Essence of Asia”</em>
-      </li>
-      <li class="mt-3"><strong>Nov 25th, 5pm</strong><br>
-        Peking Opera Musical: <em>“Journey of Love and Hope”</em>
-      </li>
-    </ul>
-  </section>
-  </div>
-
-      <!-- Column 2: Visual Art Album Cards -->
-      <!-- Images updated with loading="lazy" for performance -->
-      <div class="col-lg-4 col-md-12 mb-4">
-        <section class="bg-color-2 p-4 rounded shadow h-100">
-          <h2 class="mb-4 text-center">Visual Art · Album</h2>
-          <p class="text-center">Explore a wide range of Asian arts through our visual collection:</p>
-          <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
-            <!-- Card elements with alt text and lazy loading for accessibility & performance -->
-            <div class="col"><div class="card bg-dark h-100"><img src="imgs/1.webp" class="card-img-top" alt="Plum Blossom Painting" loading="lazy"><div class="card-body"><h5 class="card-title">Plum Blossom</h5></div></div></div>
-            <div class="col"><div class="card bg-dark h-100"><img src="imgs/2.webp" class="card-img-top" alt="Graceful Cranes Artwork" loading="lazy"><div class="card-body"><h5 class="card-title">Graceful Cranes</h5></div></div></div>
-            <div class="col"><div class="card bg-dark h-100"><img src="imgs/3.webp" class="card-img-top" alt="Red Plum Painting" loading="lazy"><div class="card-body"><h5 class="card-title">Red Plum</h5></div></div></div>
-            <div class="col"><div class="card bg-dark h-100"><img src="imgs/4.webp" class="card-img-top" alt="TypoMuse Artwork" loading="lazy"><div class="card-body"><h5 class="card-title">TypoMuse</h5></div></div></div>
-            <div class="col"><div class="card bg-dark h-100"><img src="imgs/5.webp" class="card-img-top" alt="Cultivating the Spirit" loading="lazy"><div class="card-body"><h5 class="card-title">Cultivating the Spirit</h5></div></div></div>
-          </div>
-        </section>
-      </div>
-
-      <!-- Column 3: Kun Opera and Peking Opera Videos -->
-      <!-- Preserved original layout, embedded YouTube videos with proper titles -->
-      <div class="col-lg-4 col-md-12 mb-4 d-flex flex-column gap-3">
-        <section class="video-section bg-dark text-white py-5 text-center">
-          <h2 class="mb-4">Kun Opera</h2>
-          <div class="video-container mx-auto">
-            <iframe loading="lazy" src="https://www.youtube.com/embed/MIcXMgFBpSc" title="Kun Opera Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </section>
-        <section class="video-section bg-dark text-white py-5 text-center">
-          <h2 class="mb-4">Peking Opera</h2>
-          <div class="video-container mx-auto">
-            <iframe loading="lazy" src="https://www.youtube.com/embed/RzglUUry8oI" title="Peking Opera Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <!-- ======= Row 2: Dragon Dance & Music Ensemble ======= -->
-<div class="row">
-  <!-- Column 1: Music Ensemble Video -->
-  <!-- Standard embedded video with accessibility title -->
-  <div class="col-lg-6 col-md-12 mb-4">
-  <section class="video-section bg-color-5 p-4 text-center text-white rounded shadow h-100">
-    <h2 class="mb-4">Dragon Dance</h2>
-    <div class="video-container mx-auto mt-3">
-      <iframe
-        width="100%" 
-        height="315"
-        loading="lazy"
-        src="https://www.youtube.com/embed/0XANFPKDsTE"
-        title="Dragon Dance Video"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </section>
-</div>
-
-  <!-- Column 2: Music Ensemble Video -->
-  <!-- Standard embedded video with accessibility title -->
-  <div class="col-lg-6 col-md-12 mb-4">
-    <section class="video-section bg-color-8 p-4 text-center text-white rounded shadow h-100">
-      <h2>Music Ensemble</h2>
-      <div class="video-container mx-auto mt-3">
-        <iframe loading="lazy" src="https://www.youtube.com/embed/q8KSGQ_hglg" title="Music Ensemble Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </section>
   </div>
 </div>
 
-<!-- ======= Row 3: Gu Qin & Tea Ceremony ======= -->
-<div class="row">
-  <!-- Column 1: Gu Qin Video -->
-  <div class="col-lg-6 col-md-12 mb-4">
-    <section class="video-section bg-color-8 p-4 text-center text-white rounded shadow">
-      <h2>Gu Qin</h2>
-      <div class="video-container mx-auto mt-3">
-        <iframe loading="lazy" src="https://www.youtube.com/embed/lSuRxdjXbVo" title="Gu Qin Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </section>
-  </div>
-
-  <!-- Column 2: Tea Ceremony Video -->
-  <div class="col-lg-6 col-md-12 mb-4">
-    <section class="video-section bg-color-9 p-4 text-center text-white rounded shadow">
-      <h2>Tea Ceremony</h2>
-      <div class="video-container mx-auto mt-3">
-        <iframe loading="lazy" src="https://www.youtube.com/embed/zz0GsH2rJlM" title="Tea Ceremony Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </section>
-  </div>
-</div>
-
-<!-- ======= Row 4: South Korean Dance & Tai Chi Performance ======= -->
-<div class="row">
-  <!-- Column 1: South Korean Dance -->
-  <!-- Video added per user input, verified for embedding -->
-  <div class="col-lg-6 col-md-12 mb-4">
-    <section class="video-section bg-color-8 p-4 text-center text-white rounded shadow">
-      <h2>South Korean Dance</h2>
-      <div class="video-container mx-auto mt-3">
-        <iframe loading="lazy" src="https://www.youtube.com/embed/WRfg6LVDbnQ" title="South Korean Dance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </section>
-  </div>
-
-  <!-- Column 2: Tai Chi Performance -->
-  <!-- Duplicate iframe removed, verified embed ID -->
-  <div class="col-lg-6 col-md-12 mb-4">
-    <section class="video-section bg-color-9 p-4 text-center text-white rounded shadow">
-      <h2>Tai Chi Performance</h2>
-      <div class="video-container mx-auto mt-3">
-        <iframe loading="lazy" src="https://www.youtube.com/embed/Wb1TiVyb8gg" title="Tai Chi Performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </section>
-  </div>
-</div>
-
-<!-- ======= End of Main Content ======= -->
-</main>
-
-<!-- ======= Footer Section ======= -->
-<footer class="bg-dark text-white py-4">
-  <div class="container">
+    <!-- Row 3: Social Media Icons -->
     <div class="row">
-      <!-- Left Column: Organization Description -->
-      <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-start">
-        <h5 class="mb-3">Asian Arts NY</h5>
-        <p class="mb-0">Connecting communities through art and culture in the Greater Albany area.</p>
-      </div>
-      <!-- Right Column: Contact Info & Social Media Icons -->
-      <div class="col-12 col-md-6 text-center text-md-end">
-        <h5 class="mb-3">Contact</h5>
-        <address>
-          <p class="mb-1">Wei Qin</p>
-          <p class="mb-1"><i class="fas fa-envelope me-2"></i><a href="mailto:wqartandcultural25@gmail.com" class="text-white text-decoration-none">wqartandcultural25@gmail.com</a></p>
-          <p class="mb-1"><i class="fas fa-globe me-2"></i><a href="https://www.asianartsny.org" class="text-white text-decoration-none" target="_blank">www.asianartsny.org</a></p>
-        </address>
-        <div class="mt-3">
-          <a href="https://www.facebook.com/profile.php?id=61575126127831" target="_blank" class="text-white me-3 social-icon" aria-label="Visit our Facebook">
-            <i class="fab fa-facebook fa-lg"></i>
-          </a>
-          <a href="https://www.youtube.com/@asianartsny" target="_blank" class="text-white social-icon" aria-label="Visit our YouTube">
-            <i class="fab fa-youtube fa-lg"></i>
-          </a>
-        </div>
+      <div class="col-12 social-icons text-center mt-4">
+        <a href="https://www.facebook.com/profile.php?id=61575126127831&sk=grid" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/asianartsnewyork/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@asianartsny" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/channel/UCIntgI7IRByDrE3xztGGWmg" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
       </div>
     </div>
+
+    <!-- Row 4: Copyright -->
+    <div class="row">
+      <div class="col-12 text-center border-top border-secondary pt-3 pb-2 mt-4">
+        <p class="small mb-1 text-light">&copy; 2025 Asian Arts New York, Inc. All rights reserved.</p>
+        <p class="small mb-1 text-light">
+          Designed by
+          <a href="https://duanstudio.com" target="_blank" class="footer-brand-link">
+            <strong>Duan Studio (Liam Duan)</strong>
+          </a>
+        </p>
+        <p class="small mb-0 text-light">Photographers: Yingjiang Wen, Alex Zhang</p>
+      </div>
+    </div>
+
   </div>
 </footer>
 
-<!-- ======= End of Page ======= -->
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
