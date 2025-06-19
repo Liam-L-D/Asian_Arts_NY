@@ -46,58 +46,64 @@
 </head>
 
 <body>
-  <!-- ===================== Navigation Bar ===================== -->
+<!-- ===================== Navigation Bar ===================== -->
   <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #000;">
-    <div class="container">
-      <!-- Brand logo -->
-      <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
-        <img src="logos/logo_red.webp" alt="Asian Arts NY Logo" width="60" height="60" class="me-2">
-      </a>
+  <div class="container">
+    <!-- Brand Logo -->
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+      <img src="logos/logo_red.webp" alt="Asian Arts NY Logo" width="60" height="60" class="me-2">
+    </a>
 
-      <!-- Hamburger button for mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- Toggle button for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <!-- Navigation links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto text-end text-lg-start">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="arts/index.html" role="button" data-bs-toggle="dropdown">Arts</a>
-            <ul class="dropdown-menu">
-              <!-- Submenu: Performing Arts -->
-              <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="arts/performing/index.html">Performing Art</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="arts/performing/dragon-dance.html">Dragon Dance</a></li>
-                  <li><a class="dropdown-item" href="arts/performing/drum.html">Drum</a></li>
-                  <li><a class="dropdown-item" href="arts/performing/folk-dance.html">Folk Dance</a></li>
-                  <li><a class="dropdown-item" href="arts/performing/folk-music.html">Folk Music</a></li>
-                  <li><a class="dropdown-item" href="arts/performing/chinese-opera.html">Chinese Opera</a></li>
-                  <li><a class="dropdown-item" href="arts/performing/tai-chi.html">Tai Chi</a></li>
-                  <li><a class="dropdown-item" href="arts/performing/tea-ceremony.html">Tea Ceremony</a></li>
-                </ul>
-              </li>
-              <!-- Submenu: Visual Arts -->
-              <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="arts/visual/index.html">Visual Art</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="arts/visual/fine-art.html">Fine Art</a></li>
-                  <li><a class="dropdown-item" href="arts/visual/decorative-art.html">Decorative Art</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-          <li class="nav-item"><a class="nav-link" href="donation.html">Donation</a></li>
-        </ul>
-      </div>
+    <!-- Navigation links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto text-end text-lg-start">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+        <!-- Dropdown: Arts -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="arts/index.html" role="button" data-bs-toggle="dropdown">Arts</a>
+          <ul class="dropdown-menu">
+
+            <!-- Performing Art submenu -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="arts/performing/index.html">Performing Art</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="arts/performing/dragon-dance.html">Dragon Dance</a></li>
+                <li><a class="dropdown-item" href="arts/performing/drum.html">Drum</a></li>
+                <li><a class="dropdown-item" href="arts/performing/folk-dance.html">Folk Dance</a></li>
+                <li><a class="dropdown-item" href="arts/performing/folk-music.html">Folk Music</a></li>
+                <li><a class="dropdown-item" href="arts/performing/chinese-opera.html">Chinese Opera</a></li>
+                <li><a class="dropdown-item" href="arts/performing/tai-chi.html">Tai Chi</a></li>
+                <li><a class="dropdown-item" href="arts/performing/tea-ceremony.html">Tea Ceremony</a></li>
+              </ul>
+            </li>
+
+            <!-- Visual Art submenu -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="arts/visual/index.html">Visual Art</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="arts/visual/fine-art.html">Fine Art</a></li>
+                <li><a class="dropdown-item" href="arts/visual/decorative-art.html">Decorative Art</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="donation.html">Donation</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
 <!-- ===================== About Section ===================== -->
 <section class="py-5 position-relative" style="background-color: #f7d084; color: black;">
@@ -201,8 +207,10 @@
   </div>
 </section>
 
+<!-- ===================== Footer Section ===================== -->
 <footer class="footer-section">
   <div class="container">
+
     <!-- Row 1: Logo and Quick Links -->
     <div class="row">
       <!-- Left: Logo and Contact Info -->
@@ -217,20 +225,20 @@
         </p>
       </div>
 
-      <!-- Right: Quick Links -->
+      <!-- Right: Footer Navigation -->
       <div class="col-md-6 mb-4 text-md-end text-center">
         <h6 class="text-uppercase fw-bold">Quick Links</h6>
         <ul class="list-unstyled">
           <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
           <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
-          <li><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+          <li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
           <li><a href="events.html" class="text-white text-decoration-none">Events</a></li>
           <li><a href="donation.html" class="text-white text-decoration-none">Donation</a></li>
         </ul>
       </div>
     </div>
 
-   <!-- Row 2: Collaboration Links -->
+<!-- Row 2: Collaboration Links -->
 <div class="row">
   <div class="col-12 text-center mt-4 collab-links">
     <h6 class="text-uppercase fw-bold">Collaboration</h6>
@@ -268,6 +276,7 @@
         <p class="small mb-0 text-light">Photographers: Yingjiang Wen, Alex Zhang</p>
       </div>
     </div>
+
   </div>
 </footer>
 
